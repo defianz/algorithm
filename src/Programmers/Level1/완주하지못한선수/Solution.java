@@ -10,17 +10,18 @@ class Solution {
         Arrays.sort(completion);
 
         int idx = 0;
-        while(true){
-            if(idx == completion.length) {
+        while(true) {
+            if (idx == completion.length) {
                 answer = participant[idx];
                 break;
             }
-            if(!completion[idx].equals(participant[idx])){
+            if (!completion[idx].equals(participant[idx])) {
                 answer = participant[idx];
                 break;
             }
             idx++;
         }
+        int arr[][] = new int[3][3];
 
         return answer;
     }
