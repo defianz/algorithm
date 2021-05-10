@@ -1,6 +1,9 @@
 package Programmers.Level1.모의고사;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 class Solution {
     public int[] solution(int[] answers) {
@@ -30,6 +33,14 @@ class Solution {
         for(int i=0;i<3;i++){
             if(flag[i]) answer[ansidx++]=i;
         }
+
+        List<Integer> test = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+
+        int[] ints = new int[test.size()];
+        for (int i = 0; i < ints.length; i++) {
+            ints[i] = test.get(i);
+        }
+
 
         return answer;
     }
