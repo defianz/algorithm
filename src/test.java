@@ -53,5 +53,19 @@ public class test {
 
         arr2.contains("hi");
 
+
+        System.out.println("\"-----------------\" = " + "-----------------");
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(10);
+        pq.add(1);
+        pq.add(2);
+        pq.add(5);
+
+        Iterator<Integer> aa = pq.iterator();
+        while(aa.hasNext()){
+            System.out.println("aa = " + aa.next());
+        }
+
     }
 }
