@@ -2,7 +2,7 @@ package Programmers.Level2.더맵게;
 
 import java.util.PriorityQueue;
 
-class Solution_Solving {
+class Solution {
     public int solution(int[] scoville, int K) {
         int answer = 0;
 
