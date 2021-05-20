@@ -20,6 +20,9 @@ public class test {
 //        System.out.println(Math.sqrt(3));
 //        System.out.println((long)Math.sqrt(3));
 
+
+        System.out.println("Integer.parseInt(\"000011\") = " + Integer.parseInt("000011"));
+
         HashMap<String, Integer> arr = new HashMap<>();
         arr.put("hi",10);
         arr.put("hi",20);
