@@ -20,6 +20,12 @@ public class test {
 //        System.out.println(Math.sqrt(3));
 //        System.out.println((long)Math.sqrt(3));
 
+        String[] hi = new String[]{"1111","222","33","9"};
+        Arrays.sort(hi);
+        for(String tmp : hi ){
+            System.out.println("tmp = " + tmp);
+        }
+
 
         System.out.println("Integer.parseInt(\"000011\") = " + Integer.parseInt("000011"));
 
@@ -40,7 +46,7 @@ public class test {
 
 
         int[] aaa = new int[]{1,2,3};
-        ArrayList<Integer> hi = new ArrayList<>();
+//        ArrayList<Integer> hi = new ArrayList<>();
 
         String a = "Rnjsguasdf";
         a.split("");
