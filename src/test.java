@@ -19,12 +19,17 @@ public class test {
 //        System.out.println(Math.floor(Math.sqrt(3)));
 //        System.out.println(Math.sqrt(3));
 //        System.out.println((long)Math.sqrt(3));
+        
+        String tmp = "CBD";
+        String tmp2 = "BACDE";
+        String tmp3 = tmp2.replaceAll("[^"+tmp+"]","");
+        System.out.println("tmp = " + tmp);
+        System.out.println("tmp2 = " + tmp2);
+        System.out.println("tmp3 = " + tmp3);
 
         String[] hi = new String[]{"1111","222","33","9"};
         Arrays.sort(hi);
-        for(String tmp : hi ){
-            System.out.println("tmp = " + tmp);
-        }
+
 
 
         System.out.println("Integer.parseInt(\"000011\") = " + Integer.parseInt("000011"));
