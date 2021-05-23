@@ -19,6 +19,8 @@ public class test {
 //        System.out.println(Math.floor(Math.sqrt(3)));
 //        System.out.println(Math.sqrt(3));
 //        System.out.println((long)Math.sqrt(3));
+        System.out.println("'A'-0 = " + (int)'A');
+        System.out.println("'J' = " + (int)'Z');
         
         String tmp = "CBD";
         String tmp2 = "BACDE";
