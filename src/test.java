@@ -19,6 +19,9 @@ public class test {
 //        System.out.println(Math.floor(Math.sqrt(3)));
 //        System.out.println(Math.sqrt(3));
 //        System.out.println((long)Math.sqrt(3));
+
+        System.out.println("(int)'0' = " + (int)'0');
+        System.out.println("(int)'9' = " + (int)'9');
         System.out.println("'A' = " + (int)'A');
         System.out.println("(int)'Z' = " + (int)'Z');
         System.out.println("'A'-0 = " + (int)'A');

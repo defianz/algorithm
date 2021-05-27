@@ -1,7 +1,7 @@
 
 package Programmers.Level2.조이스틱;
 
-class Solution {
+class Solution_best {
     public int solution(String name) {
         int answer = 0;
 

@@ -27,7 +27,6 @@ class Solution {
                 dq.add(arrayNum.get(i));
                 idx++;
             }
-
             if(cnt==k) break;
         }
 
