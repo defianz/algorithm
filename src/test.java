@@ -2,6 +2,8 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
+
+        System.out.println("(int)'A' = " + (int)'A');
 //        int x = 10;
 //        int y = x;
 //        y = y-1;

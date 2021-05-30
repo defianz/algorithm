@@ -1,11 +1,10 @@
 package Programmers.Level2.후보키;
 
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+class Solution_Solving {
 
     Set<String> answerSet = new HashSet<>();
     int colN;
@@ -62,7 +61,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution_Solving s = new Solution_Solving();
 //        System.out.println("s.solution(new String[][]{{\"100\",\"ryan\",\"music\",\"2\"},{\"200\",\"apeach\",\"math\",\"2\"},{\"300\",\"tube\",\"computer\",\"3\"},{\"400\",\"con\",\"computer\",\"4\"},{\"500\",\"muzi\",\"music\",\"3\"},{\"600\",\"apeach\",\"music\",\"2\"}}) = " + s.solution(new String[][]{{"100", "ryan", "music", "2"}, {"200", "apeach", "math", "2"}, {"300", "tube", "computer", "3"}, {"400", "con", "computer", "4"}, {"500", "muzi", "music", "3"}, {"600", "apeach", "music", "2"}}));
 //        System.out.println("s.solution(new String[][]{\"a\",\"b\",\"c\"},{\"1\",\"b\",\"c\"},{\"a\",\"b\",\"4\"},{\"a\",\"5\",\"c\"}) = " + s.solution(new String[][]{{"a", "b", "c"}, {"1", "b", "c"}, {"a", "b", "4"}, {"a", "5", "c"}}));
 //        System.out.println("s.solution(new String[][]{{\"a\",\"1\",\"4\"},{\"2\",\"1\",\"5\"},{\"a\",\"2\",\"4\"}}) = " + s.solution(new String[][]{{"a", "1", "4"}, {"2", "1", "5"}, {"a", "2", "4"}}));
