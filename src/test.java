@@ -2,7 +2,16 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-
+        System.out.println("(int)'{' = " + (int)'{');
+        System.out.println("(int)'}' = " + (int)'}');
+        System.out.println("'[' = " + (int)'[');
+        System.out.println("']' = " + (int)']');
+        System.out.println("(int)'(' = " + (int)'(');
+        System.out.println("(int)')' = " + (int)')');
+        char a = '2';
+        System.out.println(a-'0');
+//        System.out.println("'2'-'0' = " + '2'-'0');
+        System.out.println("Integer.toBinaryString(10) = " + Integer.toBinaryString(10));
         System.out.println("(int)'A' = " + (int)'A');
 //        int x = 10;
 //        int y = x;
