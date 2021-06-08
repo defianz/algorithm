@@ -3,6 +3,13 @@ import java.util.*;
 public class test {
     public static void main(String[] args) {
         
+        String aa = "java and backend and junior and pizza 100";
+        String[] k = aa.replaceAll(" and "," ").split(" ");
+        System.out.println("k.length = " + k.length);
+        for (int i = 0; i < k.length; i++) {
+            System.out.println("k[i] = " + k[i]);
+        }
+        
         int a = 2;
         int b = 3;
         System.out.println("Integer.toBinaryString(a) = " + Integer.toBinaryString(a));

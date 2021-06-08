@@ -3,7 +3,7 @@ package Programmers.Level2.순위검색;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Solution_Solving {
+class Solution_Fail {
 
     class appliance {
         String lang;
