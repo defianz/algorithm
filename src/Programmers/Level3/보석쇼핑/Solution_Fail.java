@@ -2,7 +2,7 @@ package Programmers.Level3.보석쇼핑;
 
 import java.util.HashSet;
 
-class Solution_Solving {
+class Solution_Fail {
     public int[] solution(String[] gems) {
 
         int totalLen = gems.length;
@@ -32,7 +32,7 @@ class Solution_Solving {
     }
 
     public static void main(String[] args) {
-        Solution_Solving s = new Solution_Solving();
+        Solution_Fail s = new Solution_Fail();
         int[] tmp = s.solution(new String[]{"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"});
         System.out.println("tmp[0] = " + tmp[0]);
         System.out.println("tmp[1] = " + tmp[1]);
