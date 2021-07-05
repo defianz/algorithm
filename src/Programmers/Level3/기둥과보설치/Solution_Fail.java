@@ -1,6 +1,6 @@
 package Programmers.Level3.기둥과보설치;
 
-class Solution_Solving {
+class Solution_Fail {
 
     int[][] gmap;
     int[][] bmap;
@@ -129,7 +129,7 @@ class Solution_Solving {
     }
 
     public static void main(String[] args) {
-        Solution_Solving s = new Solution_Solving();
+        Solution_Fail s = new Solution_Fail();
         int[][] tmp = s.solution(5,new int[][]{{1,0,0,1},{1,1,1,1},{2,1,0,1},{2,2,1,1},{5,0,0,1},{5,1,0,1},{4,2,1,1},{3,2,1,1}});
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 3; j++) {
