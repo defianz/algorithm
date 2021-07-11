@@ -7,7 +7,7 @@ class Solution_Solving {
 
         s.indexOf("110");
 
-
+        return "TODO";
     }
 
     public String[] solution(String[] s) {
