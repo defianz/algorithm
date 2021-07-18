@@ -2,7 +2,7 @@ package Programmers.Level3.브라이언의고민;
 
 import java.util.ArrayList;
 
-class Solution {
+class Solution_Solving {
 
     boolean isLower(char c){
         if (c >= 'a' && c<='z'){
