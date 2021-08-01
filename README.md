@@ -15,11 +15,11 @@ Java/C++/Python 이중 택1
 - Stack/Queue
 
 ## 문제 풀이
-[프로그래머스 Programmers](https://programmers.co.kr/learn/challenges) 사이트에서 진행
+[프로그래머스 Programmers_1st](https://programmers.co.kr/learn/challenges) 사이트에서 진행
 
 ## Objectives
-- Programmers Level 1 다 풀기
-- Programmers Level 2 다 풀기
+- Programmers_1st Level 1 다 풀기
+- Programmers_1st Level 2 다 풀기
 - 온라인 경연 참가 (팀 or 개인)
 
 
