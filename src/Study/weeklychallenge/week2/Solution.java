@@ -1,4 +1,4 @@
-package Study.weeklychallenge.second;
+package Study.weeklychallenge.week2;
 
 class Solution {
     public String solution(int[][] scores) {

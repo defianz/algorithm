@@ -1,4 +1,4 @@
-package Study.weeklychallenge.first;
+package Study.weeklychallenge.week1;
 
 class Solution {
     public long solution(int price, int money, int count) {
