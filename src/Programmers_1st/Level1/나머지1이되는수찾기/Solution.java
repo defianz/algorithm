@@ -1,0 +1,11 @@
+package Programmers_1st.Level1.나머지1이되는수찾기;
+
+class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        for (int i = 2; i < n; i++) {
+            if(n % i == 1) return i;
+        }
+        return answer;
+    }
+}
