@@ -76,11 +76,11 @@ public class Solution {
          *
          */
 
-        public static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode llist, int data, int position) {
+        public SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode llist, int data, int position) {
             // Write your code here
             int depth = 0;
             SinglyLinkedListNode head = llist;
-            while(depth != position-1){
+            while (depth != position - 1) {
                 head = head.next;
                 depth++;
             }
@@ -91,5 +91,4 @@ public class Solution {
         }
 
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
+}

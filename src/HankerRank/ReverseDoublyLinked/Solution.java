@@ -77,7 +77,7 @@ public class Solution {
          *
          */
 
-        public static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
+        public DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
             // Write your code here
             DoublyLinkedListNode prev = null;
             DoublyLinkedListNode next;

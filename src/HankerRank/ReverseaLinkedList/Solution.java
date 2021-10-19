@@ -73,7 +73,7 @@ public class Solution {
          *
          */
 
-        public static SinglyLinkedListNode reverse(SinglyLinkedListNode llist) {
+        public SinglyLinkedListNode reverse(SinglyLinkedListNode llist) {
             // Write your code here
             SinglyLinkedListNode swap = null;
             SinglyLinkedListNode next;
@@ -111,9 +111,9 @@ public class Solution {
                 llist.insertNode(llistItem);
             }
 
-            SinglyLinkedListNode llist1 = Result.reverse(llist.head);
+//            SinglyLinkedListNode llist1 = Result.reverse(llist.head);
 
-            printSinglyLinkedList(llist1, " ", bufferedWriter);
+//            printSinglyLinkedList(llist1, " ", bufferedWriter);
             bufferedWriter.newLine();
         }
 
