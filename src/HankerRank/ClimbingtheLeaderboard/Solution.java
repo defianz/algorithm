@@ -1,0 +1,101 @@
+package HankerRank.ClimbingtheLeaderboard;
+
+import java.io.*;
+import java.util.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'climbingLeaderboard' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts following parameters:
+     *  1. INTEGER_ARRAY ranked
+     *  2. INTEGER_ARRAY player
+     */
+
+    public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+        // Write your code here
+        Collections.sort(ranked,Collections.reverseOrder());
+        Map<Integer, Integer> ranking = new HashMap<>();
+        List<Integer> answer = new ArrayList<>();
+        int rank = 1;
+        int numberOne = 0;
+        for (Integer integer : ranked) {
+            if(ranking.containsKey(integer)) continue;
+            else {
+                if(rank == 1) numberOne=integer;
+                ranking.put(integer,rank++);
+            }
+        }
+        Collections.sort(ranked);
+        for (Integer point : player) {
+            if(point > numberOne) {
+                answer.add(1);
+                continue;
+            }
+
+            if(point < ranked.get(0)){
+                answer.add(rank);
+                continue;
+            } else if(point == ranked.get(0)){
+                answer.add(ranking.get(ranked.get(0)));
+                continue;
+            }
+
+            int idx = upperBound(ranked,point);
+            answer.add(ranking.get(ranked.get(idx-1)));
+        }
+        return answer;
+    }
+
+    private static int upperBound(List<Integer> ranked, Integer point) {
+        int begin = 0;
+        int end = ranked.size();
+        while(begin < end) {
+            int mid = (begin + end) / 2;
+            if(ranked.get(mid) <= point) {
+                begin = mid + 1;
+            }
+            else {
+                end = mid;
+            }
+        }
+        return end;
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int rankedCount = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> ranked = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
+
+        int playerCount = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> player = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
+
+        List<Integer> result = Result.climbingLeaderboard(ranked, player);
+
+        bufferedWriter.write(
+                result.stream()
+                        .map(Object::toString)
+                        .collect(joining("\n"))
+                        + "\n"
+        );
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+
