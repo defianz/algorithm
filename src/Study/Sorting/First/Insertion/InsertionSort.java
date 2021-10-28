@@ -1,6 +1,4 @@
-package Study.Sorting.Insertion;
-
-import Study.Sorting.Bubble.BubbleSort;
+package Study.Sorting.First.Insertion;
 
 public class InsertionSort {
 

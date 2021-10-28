@@ -1,4 +1,4 @@
-package Study.Sorting.Quick;
+package Study.Sorting.First.Quick;
 
 public class QuickSort {
 

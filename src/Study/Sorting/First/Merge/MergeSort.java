@@ -1,4 +1,4 @@
-package Study.Sorting.Merge;
+package Study.Sorting.First.Merge;
 
 public class MergeSort {
 

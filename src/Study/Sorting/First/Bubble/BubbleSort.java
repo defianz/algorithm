@@ -1,4 +1,4 @@
-package Study.Sorting.Bubble;
+package Study.Sorting.First.Bubble;
 
 public class BubbleSort {
 

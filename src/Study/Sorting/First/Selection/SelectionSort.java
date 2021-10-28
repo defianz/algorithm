@@ -1,4 +1,4 @@
-package Study.Sorting.Selection;
+package Study.Sorting.First.Selection;
 
 
 public class SelectionSort {
